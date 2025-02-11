@@ -7,6 +7,7 @@ A modern digital banking platform built with Next.js 15 and Appwrite, enabling s
 ### Current Implementation
 - User authentication and authorization using Appwrite
 - Basic user profile management
+- OTP authentication
 
 ### Upcoming Features
 - **Banking Integration**
