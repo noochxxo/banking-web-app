@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Purple Bank 🟣
 
-## Getting Started
+A modern digital banking platform built with Next.js 15 and Appwrite, enabling secure money transfers, social banking features, and financial community engagement.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Current Implementation
+- User authentication and authorization using Appwrite
+- Basic user profile management
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Upcoming Features
+- **Banking Integration**
+  - Stripe integration for payment processing
+  - Plaid integration for bank account connectivity
+  - Multi-bank account management
+  - Secure money transfers
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Transaction Management**
+  - Custom transaction categorization
+  - Transaction filtering and search
+  - Combined account balance view
+  - Date-specific transaction viewing
+  - Export functionality (CSV/PDF)
+  - Platform-specific payment tracking
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Social Features**
+  - User-to-user chat system
+  - Money request functionality
+  - Financial community forums
+  - Topic-based discussion boards
 
-## Learn More
+### Mobile App Features
+- Push notifications
+- Mobile-specific UI/UX
+- Quick transfer shortcuts
+- Mobile check deposit
+- QR code payments
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Web
+- **Frontend**: Next.js 15
+- **Backend Services**: Appwrite
+- **Payment Processing**: Stripe (TODO)
+- **Banking Integration**: Plaid (TODO)
+- **Database**: Appwrite Database
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📋 Todo List
 
-## Deploy on Vercel
+### High Priority
+1. Implement Stripe integration for payment processing
+2. Set up Plaid connection for bank account information
+3. Restructure user data model
+   - Move PII and addresses to separate collection
+   - Optimize onboarding flow
+4. Develop new theme and UI/UX improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Feature Development
+1. Chat System
+   - User-to-user messaging
+   - Money request functionality
+   - Real-time notifications
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Transaction Management
+   - Custom categorization system
+   - Transaction filtering
+   - Multi-account view
+   - Export functionality
+
+3. Community Features
+   - Discussion boards
+   - Financial topics
+   - Business networking
+
+### Responsive Design
+1. Implement mobile-first design approach
+2. Create responsive components
+   - Navigation menu (hamburger for mobile)
+   - Transaction lists
+   - Charts and graphs
+   - Forms and inputs
+3. Test across different devices and screen sizes
+4. Optimize images and assets for mobile
