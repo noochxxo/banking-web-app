@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 import { DollarSign, ArrowUpRight } from 'lucide-react';
 
+
+
 interface Transaction {
   id: string;
-  type: 'credit' | 'debit';
+  type: string;
   amount: number;
   date: string;
   description: string;
