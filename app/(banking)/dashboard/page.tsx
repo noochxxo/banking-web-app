@@ -2,6 +2,7 @@ import BankCard from "@/components/BankCard";
 import DailySpend from "@/components/DailySpending";
 import RecentTransactions from "@/components/RecentTransactions";
 import { getCurrentUser } from "@/lib/actions/user.actions";
+import { redirect } from "next/navigation";
 
 // Sample transactions for the current day
 const transactions = [
@@ -26,7 +27,8 @@ const transactions = [
 ];
 
 const page = async () => {
-  const user = await getCurrentUser();
+  const currentUser = await getCurrentUser();
+  if (!currentUser) return redirect('/sign-in');
   return (
     <div className="bg-white rounded-tl-[3em] rounded-bl-[1em] rounded-tr-[1em] rounded-br-[1em] p-12 m-6 h-full grid grid-cols-3 grid-rows-2 gap-4 space-y-7 overflow-y-scroll">
       
@@ -34,7 +36,7 @@ const page = async () => {
         <BankCard 
           balance={24680.90}
           cardNumber="4485123456789012"
-          cardHolder={`${user.firstName} ${user.lastName}`}
+          cardHolder={`${currentUser.firstName} ${currentUser.lastName}`}
           expiryDate="12/25"
         />
       </div>
